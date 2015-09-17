@@ -1,0 +1,17 @@
+{
+  "name": "what.tehfuck.com",
+  "version": "1.0.0",
+  "homepage": "https://github.com/NoahYarian/what.tehfuck.com",
+  "authors": [
+    "Noah Yarian <noah.yarian@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
