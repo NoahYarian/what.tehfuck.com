@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/NoahYarian/what.tehfuck.com/issues"
   },
-  "homepage": "https://github.com/NoahYarian/what.tehfuck.com#readme"
+  "homepage": "https://github.com/NoahYarian/what.tehfuck.com#readme",
+  "devDependencies": {
+    "browser-sync": "^2.9.3",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-sass": "^2.0.4"
+  }
 }

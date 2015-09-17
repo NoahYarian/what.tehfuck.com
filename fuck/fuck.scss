@@ -1,0 +1,27 @@
+$fuckinblack: #000;
+$fuckinwhite: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: $fuckinblack;
+  font-family: 'Work Sans', sans-serif;
+}
+.fuck {
+  display: table;
+}
+
+.fuckfuck {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fuckfuckfuck {
+  color: $fuckinwhite;
+  text-align: center;
+}
