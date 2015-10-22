@@ -1,3 +1,3 @@
-# what.tehfuck.com
+# what.tehdamn.com
 
-FUCK!!
+DAMN!!

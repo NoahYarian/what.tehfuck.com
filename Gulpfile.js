@@ -3,56 +3,56 @@ var gulp = require('gulp'),
       pattern: ['gulp-*', 'del', 'browser-sync']
     });
 
-gulp.task('fuckit', function (cb) {
+gulp.task('damnit', function (cb) {
   $.del('public')
     .then(function (paths) {
-      console.log('Deleted files/folders/fucks:\n', paths.join('\n'));
+      console.log('Deleted files/folders/damns:\n', paths.join('\n'));
       cb();
     })
     .catch(function (err) {
       if (err.message === "Cannot read property 'join' of undefined") {
-        console.log("Probably nothing to delete... Fuck it!");
+        console.log("Probably nothing to delete... Damn it!");
         cb();
       } else {
-        console.log("fucking error: ", err);
+        console.log("damning error: ", err);
       }
     });
 });
 
-gulp.task('jsfuck', function () {
+gulp.task('jsdamn', function () {
   gulp
     // .src($.mainBowerFiles('**/*.js'))
     .src(['bower_components/jquery/dist/jquery.js',
           'lib/jquery.fittext.js',
-          'fuck/fuck.js'])
-    .pipe($.concat('fuck.js'))
+          'damn/damn.js'])
+    .pipe($.concat('damn.js'))
     .pipe(gulp.dest('public'));
 });
 
-gulp.task('jadefuck', function () {
+gulp.task('jadedamn', function () {
   gulp
-    .src('fuck/fuck.jade')
+    .src('damn/damn.jade')
     .pipe($.jade({
       pretty: true
     }))
     .pipe(gulp.dest('public'));
 });
 
-gulp.task('sassyfuck', function () {
+gulp.task('sassydamn', function () {
   gulp
-    .src('fuck/fuck.scss')
+    .src('damn/damn.scss')
     .pipe($.sass()
       .on('error', $.sass.logError))
     .pipe(gulp.dest('public'));
 });
 
-gulp.task('copyfucks', function() {
+gulp.task('copydamns', function() {
   gulp
-    .src('fuck/assets/*')
-    .pipe(gulp.dest('public/fucks'));
+    .src('damn/assets/*')
+    .pipe(gulp.dest('public/damns'));
 });
 
-gulp.task('browser-fuck', function() {
+gulp.task('browser-damn', function() {
     $.browserSync.init({
         server: {
             baseDir: "./public"
@@ -60,15 +60,15 @@ gulp.task('browser-fuck', function() {
     });
 });
 
-gulp.task('buildfucks', ['jadefuck', 'sassyfuck', 'jsfuck', 'copyfucks']);
+gulp.task('builddamns', ['jadedamn', 'sassydamn', 'jsdamn', 'copydamns']);
 
-gulp.task('servefucks', ['buildfucks'], function () {
-  gulp.start('browser-fuck');
-  gulp.watch(['fuck/*.jade'], ['jadefuck']).on('change', $.browserSync.reload);
-  gulp.watch(['fuck/**/*.scss'], ['sassyfuck']).on('change', $.browserSync.reload);
-  gulp.watch(['fuck/**/*.js'], ['jsfuck']).on('change', $.browserSync.reload);
+gulp.task('servedamns', ['builddamns'], function () {
+  gulp.start('browser-damn');
+  gulp.watch(['damn/*.jade'], ['jadedamn']).on('change', $.browserSync.reload);
+  gulp.watch(['damn/**/*.scss'], ['sassydamn']).on('change', $.browserSync.reload);
+  gulp.watch(['damn/**/*.js'], ['jsdamn']).on('change', $.browserSync.reload);
 });
 
-gulp.task('default', ['fuckit'], function () {
-  gulp.start('servefucks');
+gulp.task('default', ['damnit'], function () {
+  gulp.start('servedamns');
 });

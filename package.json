@@ -1,5 +1,5 @@
 {
-  "name": "what.tehfuck.com",
+  "name": "what.tehdamn.com",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NoahYarian/what.tehfuck.com.git"
+    "url": "git+https://github.com/NoahYarian/what.tehdamn.com.git"
   },
   "author": "Noah Yarian <Noah.Yarian@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NoahYarian/what.tehfuck.com/issues"
+    "url": "https://github.com/NoahYarian/what.tehdamn.com/issues"
   },
-  "homepage": "https://github.com/NoahYarian/what.tehfuck.com#readme",
+  "homepage": "https://github.com/NoahYarian/what.tehdamn.com#readme",
   "devDependencies": {
     "browser-sync": "^2.9.3",
     "del": "^2.0.2",

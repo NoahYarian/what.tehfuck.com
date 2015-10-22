@@ -1,5 +1,5 @@
-$fuckinblack: #000;
-$fuckinwhite: #fff;
+$damninblack: #000;
+$damninwhite: #fff;
 
 * {
   margin: 0;
@@ -9,19 +9,19 @@ $fuckinwhite: #fff;
 html, body {
   height: 100%;
   width: 100%;
-  background: $fuckinblack;
+  background: $damninblack;
   font-family: 'Work Sans', sans-serif;
 }
-.fuck {
+.damn {
   display: table;
 }
 
-.fuckfuck {
+.damndamn {
   display: table-cell;
   vertical-align: middle;
 }
 
-.fuckfuckfuck {
-  color: $fuckinwhite;
+.damndamndamn {
+  color: $damninwhite;
   text-align: center;
 }
